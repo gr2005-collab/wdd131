@@ -1,0 +1,73 @@
+/* Color Schema */
+:root {
+    --primary-color: #4C21E8; /* Purple */
+    --secondary-color: #0AC2FF; /* Blue */
+    --accent-color: #EF9606; /* Orange */
+    --background-color: #FFFFFF; /* White */
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Content Section Styling */
+.content-section {
+    padding: 20px;
+    margin: 20px;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+p, ul {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Wireframe Styling */
+.wireframe {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.wireframe img {
+    max-width: 45%;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+/* Typography Styling */
+h1, h2, h3, p {
+    font-family: 'Arial', sans-serif;
+}
