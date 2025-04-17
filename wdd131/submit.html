@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Submit your favorite student recipe to Simple Eats."/>
+  <title>Simple Eats - Submit a Recipe</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Simple Eats</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="submit.html" class="active">Submit a Recipe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Submit Your Recipe</h2>
+    <form id="recipeForm">
+      <label for="name">Your Name (optional):</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" />
+
+      <label for="recipeTitle" required>Recipe Title:</label>
+      <input type="text" id="recipeTitle" name="recipeTitle" required />
+
+      <label for="ingredients" required>Ingredients:</label>
+      <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+
+      <label for="instructions" required>Instructions:</label>
+      <textarea id="instructions" name="instructions" rows="4" required></textarea>
+
+      <label>
+        <input type="checkbox" id="agree" required />
+        I agree that this recipe can be shared.
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="confirmationMsg"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Simple Eats | <a href="references.html">References</a></p>
+  </footer>
+
+  <script src="scripts/form.js"></script>
+</body>
+</html>

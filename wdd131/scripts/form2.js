@@ -1,7 +1,7 @@
 const form = document.getElementById("recipeForm");
 const msg = document.getElementById("confirmationMsg");
 
-form.addEventListener("submit", function (event) {
+form.addEventListener("submit", function(event) {
   event.preventDefault();
 
   // localStorage: track number of submissions
