@@ -1,68 +1,126 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #111;
+  line-height: 1.6;
 }
 
+/* Header */
 header {
-    background-color: #4C21E8;
-    color: white;
-    padding: 15px;
+  background-color: #004080;
+  color: white;
+  padding: 1rem;
+  text-align: center;
 }
 
-h1 {
-    margin: 0;
+header h1 {
+  font-size: 1.5rem;
+}
+
+header h1 span {
+  color: #ffd700;
+  font-weight: bold;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    background-color: #333;
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 0.5rem;
+  flex-wrap: wrap;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
+/* Main Layout */
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    display: grid;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
 }
 
+/* Cards */
 .card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  background-color: #024e76;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .content img {
-    width: 400px;
-    height: auto;
-    border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
 
+/* Web Resources */
+.web-resources ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+}
+
+.web-resources a {
+  color: #1a0dab;
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
-    background-color: #4C21E8;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
+  background-color: #003049;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+#lastModified {
+  color: #ffd700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    flex-direction: column;
+  }
 }
