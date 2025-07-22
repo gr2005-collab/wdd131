@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Discover Sierra Leone - its culture, history, and weather.">
+  <meta name="author" content="MARIAMA TEJAN KELLA">
+  <title>Explore Sierra Leone</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Discover Sierra Leone</h1>
+  </header>
+
+  <main>
+    <!-- Hero Section with Responsive WebP -->
+    <section class="hero">
+      <picture>
+        <source srcset="images/hero-small.webp" media="(max-width: 600px)">
+        <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+        <img src="images/R 1.jpeg" alt="Beautiful scenery of Sierra Leone" loading="lazy">
+      </picture>
+    </section>
+
+    <!-- About Section -->
+    <section class="info">
+      <h2>About Sierra Leone</h2>
+      <p>Sierra Leone is a beautiful country located in West Africa. Known for its lush rainforests, stunning beaches, and vibrant culture, it has a rich history and friendly people.</p>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="weather">
+      <h2>Weather 
+        <span class="weather-icon-mobile">
+          <img src="images/weather.svg" alt="Weather Icon" width="30" height="30">
+        </span> 
+        <span class="weather-icon-large" aria-hidden="true"></span>
+      </h2>
+      <div class="weather-details">
+        <p>Temperature: <span id="temp">48</span>°F</p>
+        <p>Wind Speed: <span id="speed">5</span> mph</p>
+        <p>Wind Chill: <span id="chill">Loading...</span></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
