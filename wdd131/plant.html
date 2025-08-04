@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco Garden - Plants & Tips</title>
+  <link rel="stylesheet" href="styles/plant.css">
+</head>
+<body>
+  <header>
+    <h1>Eco Garden Hub</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plants.html">Plants & Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Popular Plants</h2>
+      <div id="plant-list"></div>
+    </section>
+
+    <section>
+      <h2>Your Favorite Plant</h2>
+      <form id="favoriteForm">
+        <label for="favPlant">What's your favorite plant?</label>
+        <input type="text" id="favPlant" name="favPlant" required>
+        <button type="submit">Save</button>
+      </form>
+      <p id="savedPlant"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Eco Garden Hub | <a href="references.html">References</a></p>
+  </footer>
